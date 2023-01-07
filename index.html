@@ -24,16 +24,19 @@
 
           <nav class="header__nav">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="#" class="active">Home</a></li>
               <li><a href="">Community</a></li>
               <li><a href="">Blog</a></li>
               <li><a href="">Events</a></li>
             </ul>
           </nav>
 
-          <div>
-            <input type="search" aria-label="Search" />
-            <a href="/login">Log in</a>
+          <div class="header__actions">
+            <div class="header__search">
+              <img src="./images/icn_search.svg" width="12" height="12" alt="Magnified glass icon" />
+              <input type="search" aria-label="Search" placeholder="Search Here..." />
+            </div>
+            <a href="/login" class="btn">Log in</a>
           </div>
         </div>
       </header>
@@ -43,17 +46,15 @@
             <h2 id="netbook_community_title">Netbook community</h2>
             <h3>Your Solutions For Community!</h3>
             <p>More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
-            <p><a href="#">About More</a> <a href="#">Invite Friend</a></p>
+            <p class="hero__cta"><a href="#" class="btn btn--big">About More</a> <a href="#" class="btn btn--big btn--secondary">Invite Friend</a></p>
           </div>
           <div class="hero__image">
-          <img
-            
-            src="./images/hero_image.png"
-            srcset="./images/hero_image-2x.png 2x, ./images/hero_image-3x.png 3x"
-            alt="Illustration of 3 persons connected by a dotted line speaking to each other"
-
-          />
-        </div>
+            <img
+              src="./images/hero_image.png"
+              srcset="./images/hero_image-2x.png 2x, ./images/hero_image-3x.png 3x"
+              alt="Illustration of 3 persons connected by a dotted line speaking to each other"
+            />
+          </div>
         </section>
       </div>
     </div>
