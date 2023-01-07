@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Crypto Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netbook</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 
-        <link rel="stylesheet" href="./styles/main.css" />
-    </head>
-    <body>
-        <header class="header">
-            <div class="header__nav">
-                <img
-                    src="./images/logo.svg"
-                    alt="Logo for the company Netbook and is a circle split diagonal with orange and yellow section and a line with a dot in the end"
-                />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="prime">
+      <header class="header">
+        <div class="container header__container">
+          <img
+            src="./images/logo.svg"
+            alt="Logo for the company Netbook and is a circle split diagonal with orange and yellow section and a line with a dot in the end"
+            width="145"
+          />
 
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="">Community</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Events</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="">Community</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Events</a></li>
+            </ul>
+          </nav>
 
-            <div>
-                <input type="search" />
-                <a href="/login">Log in</a>
-            </div>
-        </header>
-        <main>
-            <section class="hero"></section>
-            <div class="clients"></div>
-            <section class="whats-netboks"></section>
-            <section class="community"></section>
-            <section class="members"></section>
-            <section class="app"></section>
-            <section class="news"></section>
-        </main>
-        <footer></footer>
-    </body>
+          <div>
+            <input type="search" aria-label="Search" />
+            <a href="/login">Log in</a>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <section class="hero" aria-labelledby="netbook_community_title">
+          <div class="hero__content">
+            <h2 id="netbook_community_title">Netbook community</h2>
+            <h3>Your Solutions For Community!</h3>
+            <p>More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+            <p><a href="#">About More</a> <a href="#">Invite Friend</a></p>
+          </div>
+          <div class="hero__image">
+          <img
+            
+            src="./images/hero_image.png"
+            srcset="./images/hero_image-2x.png 2x, ./images/hero_image-3x.png 3x"
+            alt="Illustration of 3 persons connected by a dotted line speaking to each other"
+
+          />
+        </div>
+        </section>
+      </div>
+    </div>
+    <main>
+      <div class="clients"></div>
+      <section class="whats-netboks"></section>
+      <section class="community"></section>
+      <section class="members"></section>
+      <section class="app"></section>
+      <section class="news"></section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

@@ -53,10 +53,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 :root {
-  --color-primary: #217BF4;
+  --primary-h: 214;
+  --primary-s: 91%;
+  --primary-l: 54%;
   --color-secondary: #FFAF2E;
   --color-text: #0A093D;
   --full-width: 1170px;
+
+  --color-primary-500: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --color-primary-100: hsla(var(--primary-h), var(--primary-s), var(--primary-l), 10%);
 }
 
 body {
@@ -64,14 +69,35 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.header {
-  width:  var(--full-width);
+.container {
+  max-width:  var(--full-width);
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
-.header__nav {
-  display: flex;
+.prime {
+  background: linear-gradient(311.76deg, var(--color-primary-100) -15.24%, #FFFFFF 78.85%);
+}
+
+.header {
+  padding: 1.5rem 0;
+  border-bottom: solid 1px var(--color-primary-100);
+}
+
+.header__container {
+  align-items: center;
+  display: grid;
   gap: 4.5rem;
+  grid-template-columns: 145px 1fr auto;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  align-items: center;
 }
