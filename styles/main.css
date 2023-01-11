@@ -53,7 +53,9 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 :root {
-  --color-primary: #217BF4;
+  /* --color-primary: #217BF4; */
+  --color-primary: rgb(33, 123, 244);
+  --color-primary-10: rgba(33, 123, 244, 0.1);
   --color-secondary: #FFAF2E;
   --color-white: #FFFFFF;
   --color-heading: #0A093D;
@@ -87,9 +89,17 @@ a {
   border-radius: 1rem;
 }
 
-.header {
+.container {
   width:  var(--full-width);
   margin: 0 auto;
+}
+
+.header {
+  border-bottom: solid 1px var(--color-primary-10);
+  padding: 1.5rem 0;
+}
+
+.header__container {
   display: grid;
   grid-template-columns: 145px 1fr auto;
   gap: 4.5rem;
