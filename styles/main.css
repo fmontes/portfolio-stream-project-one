@@ -89,6 +89,17 @@ a {
   border-radius: 1rem;
 }
 
+.btn__secondary {
+  background-color: transparent;
+  border: solid 1px var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn--large {
+  height: 64px;
+  padding: 0 48px;
+}
+
 .container {
   width:  var(--full-width);
   margin: 0 auto;
@@ -144,4 +155,31 @@ a {
   display: flex;
   align-items: center;
   padding: 5rem 0;
+}
+
+.hero__title {
+  font-size: 0.75rem;
+  background-color: var(--color-primary-10);
+  border-radius: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+  padding: 0 2rem;
+  height: 2rem;
+}
+
+.hero__subtitle {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin: 1.5rem 0;
+}
+
+.hero__description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero__cta {
+  display: flex;
+  gap: 1rem;
 }
