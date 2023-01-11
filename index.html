@@ -13,37 +13,51 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__container">
-        <img
-          src="./images/logo.svg"
-          alt="Logo for the company Netbook and is a circle split diagonal with orange and yellow section and a line with a dot in the end"
-          width="145"
-          height="35"
-        />
+    <div class="prime">
+      <header class="header">
+        <div class="container header__container">
+          <img
+            src="./images/logo.svg"
+            alt="Logo for the company Netbook and is a circle split diagonal with orange and yellow section and a line with a dot in the end"
+            width="145"
+            height="35"
+          />
 
-        <nav class="header__nav">
-          <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Events</a></li>
-          </ul>
-        </nav>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="">Community</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Events</a></li>
+            </ul>
+          </nav>
 
-        <div class="header__actions">
-          <form class="header__search" action="">
-            <img src="./images/ico-search.svg" alt="Maginify glass icon for search" width="16" height="16" />
-            <input type="search" aria-label="search" placeholder="Search Here..." />
-          </form>
-          <a href="/login" class="btn">Log in</a>
+          <div class="header__actions">
+            <form class="header__search" action="">
+              <img src="./images/ico-search.svg" alt="Maginify glass icon for search" width="16" height="16" />
+              <input type="search" aria-label="search" placeholder="Search Here..." />
+            </form>
+            <a href="/login" class="btn">Log in</a>
+          </div>
         </div>
-      </div>
-    </header>
-    <main>
-      <section class="hero">
-        <p>Hello World</p>
+      </header>
+      <section class="hero container">
+        <div class="hero__content">
+          <h2>Netbook community</h2>
+          <h3>Your Solutions For Community!</h3>
+          <p>More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+          <p><a href="#" class="btn">About More</a><a href="#" class="btn">Invite Friend</a></p>
+        </div>
+
+        <div class="hero__image">
+          <img
+            src="./images/hero-image.svg"
+            alt="Illustration of 3 persons talking with bubble messages floating between them"
+          />
+        </div>
       </section>
+    </div>
+    <main>
       <div class="clients"></div>
       <section class="whats-netboks"></section>
       <section class="community"></section>

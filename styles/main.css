@@ -94,6 +94,10 @@ a {
   margin: 0 auto;
 }
 
+.prime {
+  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+}
+
 .header {
   border-bottom: solid 1px var(--color-primary-10);
   padding: 1.5rem 0;
@@ -134,4 +138,10 @@ a {
 .header__search input {
   all: unset;
   width: 7.5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
 }
