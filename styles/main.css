@@ -1,7 +1,9 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -13,7 +15,8 @@
 /*
   3. Allow percentage-based heights in the application
 */
-html, body {
+html,
+body {
   height: 100%;
 }
 /*
@@ -28,37 +31,50 @@ body {
 /*
   6. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   7. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   8. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   9. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
-
 
 :root {
   /* --color-primary: #217BF4; */
   --color-primary: rgb(33, 123, 244);
   --color-primary-10: rgba(33, 123, 244, 0.1);
-  --color-secondary: #FFAF2E;
-  --color-white: #FFFFFF;
-  --color-heading: #0A093D;
+  --color-secondary: #ffaf2e;
+  --color-white: #ffffff;
+  --color-heading: #0a093d;
   --color-text: #656464;
   --full-width: 1170px;
 }
@@ -68,7 +84,12 @@ body {
   font-family: 'Inter', sans-serzif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-heading);
 }
 
@@ -101,12 +122,12 @@ a {
 }
 
 .container {
-  width:  var(--full-width);
+  width: var(--full-width);
   margin: 0 auto;
 }
 
 .prime {
-  background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
+  background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
 }
 
 .header {
@@ -129,7 +150,7 @@ a {
 }
 
 .header__nav a.active {
-  color: #2B2B39;
+  color: #2b2b39;
   font-weight: bold;
 }
 
@@ -141,7 +162,7 @@ a {
 .header__search {
   display: flex;
   gap: 0.5rem;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
   padding-bottom: 1rem;
   align-items: center;
 }
@@ -219,10 +240,10 @@ a {
 
 /* TODO: Find a better way to apply border color */
 .whats-netbooks__content li:before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--color-primary);
-  border: solid 4px #E9F2FE; 
+  border: solid 4px #e9f2fe;
   box-sizing: content-box;
   width: 8px;
   height: 8px;
@@ -248,5 +269,69 @@ a {
 
 .whats-netbooks__video {
   grid-row: 1 / -1;
+}
 
+.achievement {
+  display: grid;
+  grid-template-columns: 340px 340px 1fr;
+  gap: 1.5rem;
+}
+
+.achievement .card {
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) 
+              border-box;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 3rem 1.125rem 2.5rem 2.5rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+.achievement .card a {
+  position: relative;
+  padding-right: 20px;
+}
+
+.achievement .card a:hover {
+  color: var(--color-primary);
+}
+
+/* .achievement .card a:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("/images/ico-arrow.svg");
+  width: 10px;
+  height: 10px;
+} */
+
+.achievement .card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievement .card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-4px, -4px);
+}
+
+.achievement .card__subtitle {
+  margin-bottom: 2.5rem;
+}
+
+.achievement .card__subtitle b {
+  color: var(--color-primary);
+}
+
+.achievement .card__content {
+  margin-bottom: 2rem;
+}
+
+.card.rating .card__title, .card.awards .card__title {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
 }
