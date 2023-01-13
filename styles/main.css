@@ -183,3 +183,70 @@ a {
   display: flex;
   gap: 1rem;
 }
+
+.whats-netbooks {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin: 6rem auto;
+}
+
+.whats-netbooks__content h2 {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+.whats-netbooks__content h3 {
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 1rem;
+}
+
+.whats-netbooks__content p {
+  margin-bottom: 2rem;
+}
+
+.whats-netbooks__content ul {
+  font-size: 1.125rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.whats-netbooks__content li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+/* TODO: Find a better way to apply border color */
+.whats-netbooks__content li:before {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  border: solid 4px #E9F2FE; 
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+}
+
+.whats-netbooks__images {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  flex-shrink: 0;
+  flex-basis: 564px;
+}
+
+.whats-netbooks__images img {
+  border-radius: 1rem;
+}
+
+.whats-netbooks__video {
+  grid-row: 1 / -1;
+
+}
