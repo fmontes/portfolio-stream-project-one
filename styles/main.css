@@ -110,6 +110,10 @@ a {
   border-radius: 1rem;
 }
 
+.btn svg {
+  margin-left: 1rem;
+}
+
 .btn__secondary {
   background-color: transparent;
   border: solid 1px var(--color-primary);
@@ -119,6 +123,19 @@ a {
 .btn--large {
   height: 64px;
   padding: 0 48px;
+}
+
+h2.section__title {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+}
+
+p.section__subtitle {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.33;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -212,17 +229,6 @@ a {
   margin: 6rem auto;
 }
 
-.whats-netbooks__content h2 {
-  font-size: 1.125rem;
-  color: var(--color-primary);
-}
-
-.whats-netbooks__content h3 {
-  font-size: 2.25rem;
-  line-height: 1.33;
-  margin-bottom: 1rem;
-}
-
 .whats-netbooks__content p {
   margin-bottom: 2rem;
 }
@@ -275,12 +281,12 @@ a {
   display: grid;
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .achievement .card {
   background: linear-gradient(#fff, #fff) padding-box,
-              linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) 
-              border-box;
+    linear-gradient(to bottom, rgba(185, 185, 185, 0.44), rgba(94, 94, 94, 0.58)) border-box;
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 3rem 1.125rem 2.5rem 2.5rem;
@@ -318,7 +324,18 @@ a {
   margin-bottom: 2rem;
 }
 
-.card.rating .card__title, .card.awards .card__title {
+.achievement__content {
+  margin-inline-start: auto;
+  width: 380px;
+}
+
+.achievement__content p:not(.section__subtitle) {
+  margin-bottom: 2rem;
+  
+}
+
+.card.rating .card__title,
+.card.awards .card__title {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
