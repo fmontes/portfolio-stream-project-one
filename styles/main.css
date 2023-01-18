@@ -288,29 +288,17 @@ a {
 }
 
 .achievement .card a {
-  position: relative;
-  padding-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .achievement .card a:hover {
   color: var(--color-primary);
 }
 
-/* .achievement .card a:after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  content: "";
-  background-image: url("/images/ico-arrow.svg");
-  width: 10px;
-  height: 10px;
-} */
-
-.achievement .card a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
+.achievement .card a:hover svg path {
+  stroke: var(--color-primary);
 }
 
 .achievement .card:hover {
@@ -322,7 +310,7 @@ a {
   margin-bottom: 2.5rem;
 }
 
-.achievement .card__subtitle b {
+.card__subtitle b {
   color: var(--color-primary);
 }
 
@@ -334,4 +322,26 @@ a {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 2rem;
+}
+
+.card.rating .card__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card__avatars {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.card__avatars img {
+  border: solid 1px var(--color-white);
+  border-radius: 50%;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+}
+
+.card__avatars img:not(:first-child) {
+  margin-left: -6px;
 }
