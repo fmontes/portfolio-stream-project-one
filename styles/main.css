@@ -143,6 +143,35 @@ p.section__subtitle {
   margin: 0 auto;
 }
 
+.card.rating .card__title,
+.card.awards .card__title {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.card.rating .card__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.card__avatars {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+.card__avatars img {
+  border: solid 1px var(--color-white);
+  border-radius: 50%;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+}
+
+.card__avatars img:not(:first-child) {
+  margin-left: -6px;
+}
+
 .prime {
   background: linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
 }
@@ -331,34 +360,50 @@ p.section__subtitle {
 
 .achievement__content p:not(.section__subtitle) {
   margin-bottom: 2rem;
-  
 }
 
-.card.rating .card__title,
-.card.awards .card__title {
-  display: flex;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+.community {
+  background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #f1f6fd 20.5%, #f1f6fd 58.57%, #ffffff 100%);
 }
 
-.card.rating .card__subtitle {
+.community__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 2.5rem;
+}
+
+.community__card {
+  padding: 2.5rem 4rem 2.5rem 2.5rem;
+  background-color: var(--color-white);
+  box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+  border-radius: 1rem;
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 }
 
-.card__avatars {
-  display: inline-flex;
-  margin-right: 1rem;
+.community__card-content {
 }
 
-.card__avatars img {
-  border: solid 1px var(--color-white);
-  border-radius: 50%;
-  width: 1.5rem;
+.community__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 66px;
   aspect-ratio: 1/1;
-  box-shadow: -5px 4px 14px rgba(151, 151, 151, 0.28);
+  border-radius: 1.5rem;
 }
 
-.card__avatars img:not(:first-child) {
-  margin-left: -6px;
+.community__members .community__card-icon, .community__custom .community__card-icon {
+  background: linear-gradient(154.49deg, #5ca1fe 6.61%, #217bf4 89.72%);
+  box-shadow: 0px 10px 22px -2px rgba(109, 171, 255, 0.36);
+}
+.community__groups .community__card-icon, .community__builder .community__card-icon {
+  background: linear-gradient(154.49deg, #ff858a 6.61%, #f04148 89.72%);
+  box-shadow: 0px 8px 22px -2px rgba(248, 87, 94, 0.3);
+}
+.community__forum .community__card-icon, .community__scroll .community__card-icon {
+  background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
+box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
 }
