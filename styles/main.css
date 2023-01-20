@@ -311,6 +311,7 @@ p.section__subtitle {
   grid-template-columns: 340px 340px 1fr;
   gap: 1.5rem;
   align-items: center;
+  margin-bottom: 96px;
 }
 
 .achievement .card {
@@ -364,12 +365,20 @@ p.section__subtitle {
 
 .community {
   background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #f1f6fd 20.5%, #f1f6fd 58.57%, #ffffff 100%);
+  padding: 5rem 0;
+  margin-bottom: 7.5rem;
 }
 
 .community__items {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 2.5rem;
+}
+
+.community__content {
+  text-align: center;
+  width: 28rem;
+  margin: 0 auto 4rem;
 }
 
 .community__card {
@@ -380,9 +389,6 @@ p.section__subtitle {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-}
-
-.community__card-content {
 }
 
 .community__card-icon {
@@ -406,4 +412,79 @@ p.section__subtitle {
 .community__forum .community__card-icon, .community__scroll .community__card-icon {
   background: linear-gradient(154.49deg, #FFD085 6.61%, #FFAF2E 89.72%);
 box-shadow: 0px 10px 22px -2px rgba(250, 186, 84, 0.3);
+}
+
+.team__content {
+  width: 28.125rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__tabs {
+  background-color: var(--color-primary-10);
+  width: 28.125rem;
+  margin: 2.5rem auto;
+  display: flex;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.team__tab {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  flex-grow: 1;
+  height: 3.5rem;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.team__tab:hover {
+  color: var(--color-primary);
+}
+
+.team__tab--active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.team__members {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem
+}
+
+.team__member-card {
+  text-align: center;
+  border: solid 1px #F3F3F3;
+  border-radius: 1rem;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  padding: 2rem;
+}
+
+.team__member-card:hover {
+  box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.24);
+  transform: translate(-4px, -4px);
+}
+
+.team__member-picture {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.team__member-avatar {
+  display: inline-block;
+  position: relative;
+}
+
+.team__member-name {
+  font-size: 1.5rem;
+}
+.team__member-username {
+
 }
