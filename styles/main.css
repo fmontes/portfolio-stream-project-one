@@ -676,3 +676,43 @@ a.link__arrowed:hover svg path {
   flex-grow: 1;
   padding: 0 1.5rem;
 }
+
+.footer__secondary {
+  background-color: #20202D;
+}
+
+.footer__secondary-content {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__secondary-content > * {
+  flex: 1
+}
+
+.footer__social-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.footer__social-links a {
+  display: block;
+  background-color: var(--color-white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__secondary-logo {
+  display: flex;
+  justify-content: center;
+}
