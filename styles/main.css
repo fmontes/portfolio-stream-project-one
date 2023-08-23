@@ -227,6 +227,10 @@ a.link__arrowed:hover svg path {
   font-weight: bold;
 }
 
+.header__nav a:hover {
+  color: black;
+}
+
 .header__actions {
   display: flex;
   gap: 3rem;
@@ -462,7 +466,7 @@ a.link__arrowed:hover svg path {
   padding: 0 2rem;
 }
 
-.team__tab:hover {
+.team__tab:not(.team__tab--active):hover {
   color: var(--color-primary);
 }
 
